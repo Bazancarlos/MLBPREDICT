@@ -62,8 +62,8 @@ def predict_next(df, model):
     return model.predict(new_data)[0]
 
 # Streamlit app
-st.title("🔮 Phillies Player Prediction")
-st.subheader("Will Bryce Harper get a hit in his next game?")
+st.title(" Player Prediction")
+st.subheader("Will {player_name} get a hit in his next game?")
 
 df = get_game_log(PLAYER_ID, SEASON)
 df = prepare_features(df)
