@@ -79,4 +79,3 @@ st.metric("Chance of Getting a Hit", f"{proba * 100:.1f}%")
 st.image(image_url, caption="Bryce Harper", width=150)
 st.line_chart(df.set_index('date')['hits'])
 
-st.caption("Powered by MLB Stats API and Streamlit")
