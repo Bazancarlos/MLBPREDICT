@@ -1,70 +1,69 @@
-# MLBPREDICT
-Overview
+# ⚾ MLB Player Performance Analytics & Predictor
 
-This project analyzes Major League Baseball player performance data and applies machine learning to predict player hitting outcomes. It combines data collection, feature engineering, modeling, and visualization into an end-to-end analytics workflow.
+## Overview
+This project analyzes Major League Baseball player performance data and applies machine learning to **predict hitting outcomes**. It demonstrates an end-to-end analytics workflow, including data collection, cleaning, feature engineering, modeling, and visualization, using real MLB data.
 
-Objectives
+The project was built to showcase **data analytics and applied machine learning skills** in a practical, domain-driven context.
 
-Collect and process MLB player performance data via an API
+---
 
-Engineer features from historical game logs
+## Objectives
+- Collect and process MLB player performance data via an API
+- Clean and prepare historical game log data
+- Engineer features relevant to hitting performance
+- Train a machine learning model to predict hits
+- Present insights and predictions through an interactive dashboard
 
-Train a machine learning model to predict hitting performance
+---
 
-Present results through an interactive dashboard
+## Tools & Technologies
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Streamlit
+- MLB Stats API
+- Git / GitHub
 
-Tools & Technologies
+---
 
-Python
+## Data Source
+- **MLB Stats API**
+- Historical player game logs and performance statistics
 
-Pandas, NumPy
+---
 
-Scikit-learn
+## Methodology
 
-Streamlit
+### Data Collection
+- Pulled live and historical MLB player data using the MLB Stats API
+- Consolidated game-level performance data into structured datasets
 
-MLB Stats API
+### Data Cleaning & Preparation
+- Handled missing and inconsistent values
+- Standardized data types and formats
+- Selected relevant features for modeling
 
-Git/GitHub
+### Feature Engineering
+- Created performance-based features from historical game logs
+- Prepared datasets suitable for machine learning input
 
-Data Source
+### Modeling
+- Implemented a **Random Forest** model to predict player hits
+- Trained the model on historical performance data
+- Evaluated predictions using standard classification metrics
 
-MLB Stats API
+### Visualization
+- Built an interactive **Streamlit dashboard**
+- Displayed player analytics and model predictions in a user-friendly interface
 
-Historical player game logs and performance statistics
+---
 
-Methodology
+## Features
+- Player performance summaries
+- Predictive hit modeling
+- Interactive filtering and visualization through Streamlit
 
-Data Collection
+---
 
-Pulled live and historical data from the MLB Stats API
+## Project Structure
 
-Consolidated player game logs into structured datasets
-
-Data Processing
-
-Cleaned missing and inconsistent values
-
-Engineered features relevant to hitting performance
-
-Modeling
-
-Implemented a Random Forest model
-
-Trained on historical data to predict hits
-
-Evaluated model performance using standard metrics
-
-Visualization
-
-Built an interactive Streamlit dashboard
-
-Displayed predictions and player analytics in a user-friendly format
-
-Features
-
-Player performance summaries
-
-Predictive hit modeling
-
-Interactive filtering and visualization via Streamlit
