@@ -5,6 +5,7 @@ This project analyzes Major League Baseball player performance data and applies 
 
 The project was built to showcase **data analytics and applied machine learning skills** in a practical, domain-driven context.
 
+https://bazancarlos-mlbpredict-mlbtracker-rjdmju.streamlit.app/
 ---
 
 ## Objectives
