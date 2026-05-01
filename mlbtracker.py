@@ -4,8 +4,8 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from datetime import datetime
 
-# Load data for Bryce Harper
-SEASON=2025
+
+SEASON=2026
 @st.cache_data
 def get_teams():
     url = "https://statsapi.mlb.com/api/v1/teams?sportId=1"  # 1 = MLB
@@ -23,12 +23,12 @@ def get_team_roster(team_id):
         player_id = player['person']['id']
         player_name = player['person']['fullName']
 
-        # Get player position info
+        # take out pitchers
         details_url = f"https://statsapi.mlb.com/api/v1/people/{player_id}"
         detail_resp = requests.get(details_url).json()
         try:
             primary_position = detail_resp['people'][0]['primaryPosition']['abbreviation']
-            if primary_position != "P":  # Exclude pitchers
+            if primary_position != "P":  # no pitchers
                 hitters[player_name] = player_id
         except (KeyError, IndexError):
             continue  # Skip if missing data
